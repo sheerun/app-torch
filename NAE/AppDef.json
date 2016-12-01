@@ -1,0 +1,32 @@
+{
+  "name": "app-torch",
+  "description": "Torch7",
+  "author": "stephenfox",
+  "licensed": true,
+  "classifications": [
+    "Machine Learning"
+  ],
+  "machines": [
+    "n*",
+    "ng*"
+  ],
+  "vault-types": [
+    "FILE",
+    "BLOCK",
+    "BLOCK_ARRAY",
+    "OBJECT"
+  ],
+  "commands": {
+    "batch": {
+      "path": "/usr/local/scripts/develop.sh",
+      "interactive": true,
+      "name": "Launch SSH",
+      "description": "Launch SSH",
+      "parameters": {}
+    }
+  },
+  "image": {
+    "data": "",
+    "type": "image/png"
+  }
+}
