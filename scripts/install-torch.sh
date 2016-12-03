@@ -14,11 +14,11 @@ sudo apt-get install -y \
      build-essential
 
 # Install Torch
-sudo mkdir -p /usr/local/torch
-sudo chown -R nimbix:nimbix /usr/local/torch
+mkdir -p /usr/local/torch
 curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
 git clone https://github.com/torch/distro.git /usr/local/torch --recursive
 cd /usr/local/torch; ./install.sh -b
+sudo chown -R nimbix:nimbix /usr/local/torch
 
 . /usr/local/torch/install/bin/torch-activate
 LUAROCKS=`which luarocks`
