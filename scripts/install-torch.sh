@@ -18,7 +18,8 @@ mkdir -p /usr/local/torch
 curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
 git clone https://github.com/torch/distro.git /usr/local/torch --recursive
 cd /usr/local/torch; ./install.sh -b
-sudo chown -R nimbix:nimbix /usr/local/torch
+sudo chown -R root:nimbix /usr/local/torch
+sudo chmod -R 775 /usr/local/torch
 
 . /usr/local/torch/install/bin/torch-activate
 LUAROCKS=`which luarocks`
