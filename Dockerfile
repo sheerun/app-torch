@@ -1,4 +1,4 @@
-FROM nimbix/base-ubuntu-nvidia
+FROM nimbix/base-ubuntu-nvidia:8.0-cudnn5-devel-ubuntu16.04
 MAINTAINER Nimbix, Inc.
 
 USER root
